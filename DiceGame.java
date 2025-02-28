@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 /**.
 * This program will check if the user guessed the correct number
 * Between 1 and 6 with a random number generator and display
@@ -10,7 +9,6 @@ import java.util.Scanner;
 * @version 1.0
 * @since   2025-February-26
 */
-
 
 final class DiceGame {
     /**.
@@ -31,7 +29,6 @@ final class DiceGame {
     private DiceGame() {
         throw new IllegalStateException("Utility class");
     }
-
 
     /**
     * This is the main method.
@@ -79,10 +76,10 @@ final class DiceGame {
                         System.out.print(correctGuess);
                         System.out.print(". It took you ");
                         System.out.print(numberOfGuess);
-                        System.out.println(" guesses.");
+                        System.out.println(" guess(es).");
                     } else if (guessAsInt < correctGuess) {
                         // Display message if guess is lower
-                        System.out.print("The number is lower than ");
+                        System.out.print("The number is higher than ");
                         System.out.println(guessAsInt);
                         // Increment the number of guesses
                         numberOfGuess = numberOfGuess + 1;
