@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 /**.
 * This program will check if the user guessed the correct number
 * Between 1 and 6 with a random number generator and display
@@ -10,6 +11,7 @@ import java.util.Scanner;
 * @since   2025-February-26
 */
 
+
 final class DiceGame {
     /**.
     * MIN_NUM as int constant
@@ -19,6 +21,7 @@ final class DiceGame {
     * MAX_NUM as int constant
     **/
     private static final int MAX_NUM = 6;
+
 
     /**
     * This is a private constructor used to satisfy the style checker.
@@ -100,11 +103,11 @@ final class DiceGame {
                 // Error message for invalid input
                 System.out.println("Invalid input: " + guessAString
                         + ". Please enter an Integer between 1 and 6.");
-           }
-        // While the guess does not equal the correct guess
+            }
+            // While the guess does not equal the correct guess
         } while (guessAsInt != correctGuess);
 
-    // Close scanner
-    scanner.close();
+        // Close scanner
+        scanner.close();
     }
 }
